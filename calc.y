@@ -8,7 +8,7 @@
        
 %}
 
-%union				//to define possible symbol types
+%union			
 { double p;}
 %token<p>num
 %token L_BRACKET R_BRACKET
@@ -22,14 +22,14 @@
 /*Defining the Precedence and Associativity*/
 
 %left SUB
-%left ADD			//lowest precedence
+%left ADD		
 %left MUL
 %left DIV
 %left POW SQRT
-%left L_BRACKET R_BRACKET			//highest precedenc
-%nonassoc uminu			//no associativity
+%left L_BRACKET R_BRACKET			
+%nonassoc uminu			
 %type<p>exp
-%type<p>constant			//Sets the type for non - terminal
+%type<p>constant			
 %%
 
 /* for storing the answer */

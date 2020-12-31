@@ -15,13 +15,13 @@ setup in linux base system:
      
 3.run below command to run lex and yacc file:
 
-   lex calc.l      //genetare lex.yy.c
+   lex calc.l               //genetare lex.yy.c
    
-   yacc -d calc.y     // generate both y.tab.h  & y.tab.c 
+   yacc -d calc.y            // generate both y.tab.h  & y.tab.c 
    
-   cc lex.yy.c y.tab.c -ll -lm    //here we run both c file ,it generate a.out file
+   cc lex.yy.c y.tab.c -ll -lm               //here we run both c file ,it generate a.out file
    
-   ./a.out    // to get output.
+   ./a.out                  // to get output.
    
       
     
